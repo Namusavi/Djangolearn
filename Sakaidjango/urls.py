@@ -20,8 +20,10 @@ from. import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.indexpage, name='index'),
     path('about/', views.aboutpage, name='about'),
     path('services/', views.servicespage, name='services'),
     path('projects/', views.projectspage, name='projects'),
     path('blog/', views.blogpage, name='blog'),
+    path('signup/',views.signuppage, name='signup')
 ]
