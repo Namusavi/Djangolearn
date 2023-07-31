@@ -28,15 +28,19 @@
 <div class="form-group">
  <input type="text" value="{{ dta.name }}" class="form-control" placeholder="name" name="name" required>
  </div>
-<div class="form-group">
- <input type="text" value="{{ dta.country }}" class="form-control" placeholder="country" name="country" required>
- </div>
-<div class="form-group">
- <input type="text" value="{{ dta.city }}" class="form-control" placeholder="city" name="city" required>
- </div>
+     <div class="form-group">
+                        <input type="text" value="{{ dta.email }}" class="form-control  mt-2" placeholder="email" name="email" required>
+     </div>
+     <div class="form-group">
+                        <input type="number" value="{{ dta.phone }}" class="form-control  mt-2" placeholder="phone" name="phone" required>
+     </div>
 
- <div class="form-group">
- <input type="email" value="{{ dta.email }}" class="form-control mt-2" placeholder="Email" name="email" required>
+
+<div class="form-group">
+ <input type="text" value="{{ dta.country }}" class="form-control" placeholder="Enter Country" name="country" required>
+ </div>
+<div class="form-group">
+ <input type="text" value="{{ dta.city }}" class="form-control" placeholder="Enter City" name="city" required>
  </div>
 
  <div class="form-group">
@@ -91,7 +95,9 @@
 
  </button>
 
- <button>update</button>
+ <button>
+  <a href="/delete/{{ d.id }}"> Update </a>
+ </button>
 
  </th>
  </tr>
