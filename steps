@@ -1,0 +1,10 @@
+edit html add input
+edit model and add field
+make migrations >migrate
+go to views and add field to the query
+go to the html file and add to your table
+
+
+add two fields
+country
+city
